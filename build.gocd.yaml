@@ -25,11 +25,7 @@ pipelines:
             tasks:
             - exec:
                 arguments:
-                - servers/express/api-with-express-and-handlebars
-                command: cd
-                run_if: passed
-            - exec:
-                arguments:
                 - install
                 command: npm
+                working_directory: servers/express/api-with-express-and-handlebars
                 run_if: passed
