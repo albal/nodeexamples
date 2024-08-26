@@ -29,3 +29,9 @@ pipelines:
                 command: npm
                 working_directory: servers/express/api-with-express-and-handlebars
                 run_if: passed
+            - exec:
+                arguments:
+                - test
+                command: npm
+                working_directory: servers/express/api-with-express-and-handlebars
+                run_if: passed
