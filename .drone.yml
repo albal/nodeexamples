@@ -7,5 +7,5 @@ steps:
   image: node
   commands:
   - cd servers/express/api-with-express-and-handlebars
-  - npm build
+  - npm install
   - npm test
