@@ -1,0 +1,11 @@
+---
+kind: pipeline
+name: default
+
+steps:
+- name: node example
+  image: node
+  commands:
+  - cd servers/express/api-with-express-and-handlebars
+  - npm build
+  - npm test
